@@ -309,6 +309,7 @@ body {
 }
 
 .footer__logo-and-address {
+  flex-grow: 1;
   margin-right: 70px;
 }
 
@@ -521,16 +522,9 @@ body {
 }
 
 .modal__label {
+  display: block;
   width: 100%;
   margin-bottom: 10px;
-}
-
-.modal__label:nth-of-type(4) {
-  margin-bottom: 20px;
-}
-
-.modal__label-text {
-  margin-bottom: 4px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -539,8 +533,14 @@ body {
   color: #757575;
 }
 
+.modal__label:nth-of-type(4) {
+  margin-bottom: 20px;
+}
+
 .modal__input-wrapper {
+  display: block;
   position: relative;
+  margin-top: 4px;
 
   color: #212121;
 
@@ -589,6 +589,7 @@ body {
 }
 
 .modal__input--textarea {
+  margin-top: 4px;
   height: 120px;
 
   resize: none;

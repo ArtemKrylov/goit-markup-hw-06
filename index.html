@@ -477,7 +477,7 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <section class="footer__logo-and-address">
+        <div class="footer__logo-and-address">
           <h3 class="visually-hidden">Логотип та адреса</h3>
           <a class="link cite-logo footer-logo" href="./index.html" rel="Студія" lang="en"
             ><span class="logo-accent">Web</span>Studio</a
@@ -514,8 +514,8 @@
               </li>
             </ul>
           </address>
-        </section>
-        <section class="footer__social">
+        </div>
+        <div class="footer__social">
           <h3 class="social-title">Приєднуйтесь</h3>
           <ul class="social-network-contacts list">
             <li class="social-network-contact">
@@ -567,7 +567,7 @@
               ></a>
             </li>
           </ul>
-        </section>
+        </div>
         <form class="footer__form">
           <label for="footer__input" class="footer__label"> Підпишіться на розсилку</label>
           <input
@@ -599,9 +599,8 @@
         <form class="modal__form">
           <p class="modal__top-text">Залиште свої дані, ми вам передзвонимо</p>
           <label class="modal__label">
-            <p class="modal__label-text">Ім'я</p>
-
-            <div class="modal__input-wrapper">
+            Ім'я
+            <span class="modal__input-wrapper">
               <input
                 type="text"
                 class="modal__input modal__input--rectangle"
@@ -612,11 +611,11 @@
               <svg class="icon modal__input-svg" width="12" height="12">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal__label">
-            <p class="modal__label-text">Телефон</p>
-            <div class="modal__input-wrapper">
+            Телефон
+            <span class="modal__input-wrapper">
               <input
                 type="tel"
                 class="modal__input modal__input--rectangle"
@@ -628,11 +627,11 @@
               <svg class="icon modal__input-svg" width="13" height="13">
                 <use href="./images/icons.svg#icon-phone-tube"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal__label">
-            <p class="modal__label-text">Пошта</p>
-            <div class="modal__input-wrapper">
+            Пошта
+            <span class="modal__input-wrapper">
               <input
                 type="email"
                 class="modal__input modal__input--rectangle"
@@ -644,10 +643,10 @@
               <svg class="icon modal__input-svg" width="15" height="12">
                 <use href="./images/icons.svg#icon-email-envelope"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal__label">
-            <p class="modal__label-text">Коментар</p>
+            Коментар
             <textarea
               class="modal__input modal__input--textarea"
               name="customer-comment"
@@ -667,10 +666,10 @@
                 href="./images/icons.svg#icon-checkbox"
               ></use>
             </svg>
-            <p class="modal__checkbox-label-text">
+            <span class="modal__checkbox-label-text">
               Погоджуюся з розсилкою та приймаю
               <a href="#" class="link modal__checkbox-label-link">Умови договору</a>
-            </p>
+            </span>
           </label>
           <button type="submit" class="button button--submit modal__submit-button">
             Відправити
